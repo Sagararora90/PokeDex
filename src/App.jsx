@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./App.css";
+import logo from "./assets/images.png"; 
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
@@ -57,7 +58,7 @@ function App() {
   return (
     <div>
       <div className="flex py-6 items-center bg-red-500 justify-between px-6 flex-wrap">
-        <img src="/images.png" alt="LOGO" width="100" />
+        <img src={logo} alt="LOGO" width="80" />
         <p className="text-6xl font-semibold text-white">PokiCheck</p>
         <div className="flex gap-2">
           <input
